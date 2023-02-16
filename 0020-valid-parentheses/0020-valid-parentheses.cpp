@@ -1,0 +1,22 @@
+class Solution {
+public:
+    bool isValid(string s) {
+
+        std::stack<char> list;
+        for(auto itr = s.begin(); itr!= s.end(); ++itr){
+            
+            if(*itr == '(' || *itr =='{'|| *itr == '[')
+                list.push(*itr);
+            
+            else if(list.empty() || list.top() == '{' && *itr != '}'   || list.top() == '(' && *itr != ')' || list.top() == '[' && *itr != ']'){
+                
+                return false;
+            }
+            
+            else list.pop();
+        
+        }
+       
+        return list.empty() ? true : false;        
+    }
+};
