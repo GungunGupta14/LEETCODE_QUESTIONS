@@ -2,7 +2,7 @@
 
 <pre>P   A   H   N
 A P L S I I G
-Y   I   R
+Y   I   
 </pre>
 
 <p>And then read line by line: <code>"PAHNAPLSIIGYIR"</code></p>
